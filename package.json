@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "babel-node tools/srcServer.js"
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "babel-node tools/srcServer.js",
+    "lint": "esw webpack.config.* src tools",
+    "lint:watch": "npm run lint -- --watch"
   },
   "author": "ilgor",
   "dependencies": {

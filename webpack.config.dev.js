@@ -14,7 +14,7 @@ export default {
     output: {
         path: __dirname + '/dist', // for Prod
         publicPath: '/',
-        filename: 'bundle.js',
+        filename: 'bundle.js'
     },
     devServer: {
         ontentBase: path.resolve(__dirname, 'src')
@@ -32,5 +32,5 @@ export default {
           {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
           {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
         ]
-    },
-}
+    }
+};
